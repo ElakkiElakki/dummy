@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">18</td><td class="num">391,605</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="18">runners.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="18">1776595796848</td><td rowspan="18">16460</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m7">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m8">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m9">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m10">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m11">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m12">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m13">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m14">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m15">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m16">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m17">runScenario</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">runners.TestRunner</td><td><a href="#m18">runScenario</a></td><td rowspan="6">1776595737053</td><td rowspan="6">11495</td></tr><tr class="passedeven"><td><a href="#m19">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m20">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m21">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m22">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m23">runScenario</a></td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC004 testcase TC_014&quot;</td><td>&quot;SC004 car selection and unavailable car validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC004 precondition search results not shown expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario004CarSelectionSteps.userPreparesSC004ScenarioWithTestCase(Scenario004CarSelectionSteps.java:31)
+	at ✽.user prepares SC004 scenario with test case &quot;TC_014&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC004_car_selection.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC001 testcase TC_004&quot;</td><td>&quot;SC001 pickup and drop validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalStateException: OTP login was not completed within timeout
+	at pages.LoginPage.waitForManualOtpCompletionAndAutoSubmit(LoginPage.java:74)
+	at pages.LoginPage.loginWithManualOtpIfNeeded(LoginPage.java:35)
+	at stepdefinitions.Scenario001PickupDropSteps.userPreparesSC001ScenarioWithTestCase(Scenario001PickupDropSteps.java:28)
+	at ✽.user prepares SC001 scenario with test case &quot;TC_004&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC001_pickup_drop_search.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC004 testcase TC_017&quot;</td><td>&quot;SC004 car selection and unavailable car validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalStateException: OTP login was not completed within timeout
+	at pages.LoginPage.waitForManualOtpCompletionAndAutoSubmit(LoginPage.java:74)
+	at pages.LoginPage.loginWithManualOtpIfNeeded(LoginPage.java:35)
+	at stepdefinitions.Scenario004CarSelectionSteps.userPreparesSC004ScenarioWithTestCase(Scenario004CarSelectionSteps.java:28)
+	at ✽.user prepares SC004 scenario with test case &quot;TC_017&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC004_car_selection.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC002 testcase TC_006&quot;</td><td>&quot;SC002 pickup date and time validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC002 valid date/time failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario002DateTimeSteps.sc002ExpectedOutcomeShouldBeValidated(Scenario002DateTimeSteps.java:44)
+	at ✽.SC002 expected outcome should be validated(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC002_pickup_date_time.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC006 testcase TC_026&quot;</td><td>&quot;SC006 booking details form validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC006 precondition search results not shown expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario006BookingDetailsSteps.userPreparesSC006ScenarioWithTestCase(Scenario006BookingDetailsSteps.java:33)
+	at ✽.user prepares SC006 scenario with test case &quot;TC_026&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC006_booking_details.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC001 testcase TC_002&quot;</td><td>&quot;SC001 pickup and drop validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: No clickable element found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: driver.version: unknown
+	at pages.BasePage.clickFirstAvailable(BasePage.java:79)
+	at pages.LoginPage.openSignIn(LoginPage.java:42)
+	at pages.LoginPage.loginWithManualOtpIfNeeded(LoginPage.java:33)
+	at stepdefinitions.Scenario001PickupDropSteps.userPreparesSC001ScenarioWithTestCase(Scenario001PickupDropSteps.java:28)
+	at ✽.user prepares SC001 scenario with test case &quot;TC_002&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC001_pickup_drop_search.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC006 testcase TC_024&quot;</td><td>&quot;SC006 booking details form validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC006 precondition search results not shown expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario006BookingDetailsSteps.userPreparesSC006ScenarioWithTestCase(Scenario006BookingDetailsSteps.java:33)
+	at ✽.user prepares SC006 scenario with test case &quot;TC_024&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC006_booking_details.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC003 testcase TC_013&quot;</td><td>&quot;SC003 search results and no-results behavior&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC003 performance expectation failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario003SearchResultsSteps.sc003ExpectedOutcomeShouldBeValidated(Scenario003SearchResultsSteps.java:67)
+	at ✽.SC003 expected outcome should be validated(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC003_search_results.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC005 testcase TC_021&quot;</td><td>&quot;SC005 navigation flow and browser back behavior&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC005 results page should display first expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario005NavigationFlowSteps.userExecutesNavigationFlowForSC005(Scenario005NavigationFlowSteps.java:37)
+	at ✽.user executes navigation flow for SC005(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC005_navigation_flow.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC004 testcase TC_015&quot;</td><td>&quot;SC004 car selection and unavailable car validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC004 precondition search results not shown expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario004CarSelectionSteps.userPreparesSC004ScenarioWithTestCase(Scenario004CarSelectionSteps.java:31)
+	at ✽.user prepares SC004 scenario with test case &quot;TC_015&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC004_car_selection.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC003 testcase TC_010&quot;</td><td>&quot;SC003 search results and no-results behavior&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC003 valid route failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario003SearchResultsSteps.sc003ExpectedOutcomeShouldBeValidated(Scenario003SearchResultsSteps.java:56)
+	at ✽.SC003 expected outcome should be validated(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC003_search_results.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC005 testcase TC_018&quot;</td><td>&quot;SC005 navigation flow and browser back behavior&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC005 results page should display first expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario005NavigationFlowSteps.userExecutesNavigationFlowForSC005(Scenario005NavigationFlowSteps.java:37)
+	at ✽.user executes navigation flow for SC005(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC005_navigation_flow.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC003 testcase TC_012&quot;</td><td>&quot;SC003 search results and no-results behavior&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[contains(.,&apos;couldn’t find any rides&apos;) or contains(.,&apos;couldn&apos;t find any rides&apos;)] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//*[contains(.,&apos;couldn’t find any rides&apos;) or contains(.,&apos;couldn&apos;t find any rides&apos;)]&apos; is not a valid XPath expression.
+  (Session info: chrome=147.0.7727.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [204864327f478b4b4741b777840bd3da, findElements {value=//*[contains(.,&apos;couldn’t find any rides&apos;) or contains(.,&apos;couldn&apos;t find any rides&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62511}, goog:processID: 27988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62511/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 204864327f478b4b4741b777840bd3da
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:369)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
+	at pages.BasePage.isAnyVisible(BasePage.java:39)
+	at pages.SearchResultsPage.isNoCarsMessageDisplayed(SearchResultsPage.java:36)
+	at stepdefinitions.Scenario003SearchResultsSteps.sc003ExpectedOutcomeShouldBeValidated(Scenario003SearchResultsSteps.java:63)
+	at ✽.SC003 expected outcome should be validated(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC003_search_results.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC001 testcase TC_001&quot;</td><td>&quot;SC001 pickup and drop validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: No clickable element found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: driver.version: unknown
+	at pages.BasePage.clickFirstAvailable(BasePage.java:79)
+	at pages.LoginPage.openSignIn(LoginPage.java:42)
+	at pages.LoginPage.loginWithManualOtpIfNeeded(LoginPage.java:33)
+	at stepdefinitions.Scenario001PickupDropSteps.userPreparesSC001ScenarioWithTestCase(Scenario001PickupDropSteps.java:28)
+	at ✽.user prepares SC001 scenario with test case &quot;TC_001&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC001_pickup_drop_search.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC006 testcase TC_022&quot;</td><td>&quot;SC006 booking details form validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC006 precondition search results not shown expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario006BookingDetailsSteps.userPreparesSC006ScenarioWithTestCase(Scenario006BookingDetailsSteps.java:33)
+	at ✽.user prepares SC006 scenario with test case &quot;TC_022&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC006_booking_details.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC006 testcase TC_023&quot;</td><td>&quot;SC006 booking details form validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC006 precondition search results not shown expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario006BookingDetailsSteps.userPreparesSC006ScenarioWithTestCase(Scenario006BookingDetailsSteps.java:33)
+	at ✽.user prepares SC006 scenario with test case &quot;TC_023&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC006_booking_details.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC004 testcase TC_016&quot;</td><td>&quot;SC004 car selection and unavailable car validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC004 precondition search results not shown expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario004CarSelectionSteps.userPreparesSC004ScenarioWithTestCase(Scenario004CarSelectionSteps.java:31)
+	at ✽.user prepares SC004 scenario with test case &quot;TC_016&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC004_car_selection.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC006 testcase TC_025&quot;</td><td>&quot;SC006 booking details form validation&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: SC006 precondition search results not shown expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepdefinitions.Scenario006BookingDetailsSteps.userPreparesSC006ScenarioWithTestCase(Scenario006BookingDetailsSteps.java:33)
+	at ✽.user prepares SC006 scenario with test case &quot;TC_025&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/src/test/resources/features/SC006_booking_details.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC002 testcase TC_007&quot;</td><td>&quot;SC002 pickup date and time validation&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC001 testcase TC_003&quot;</td><td>&quot;SC001 pickup and drop validation&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC005 testcase TC_019&quot;</td><td>&quot;SC005 navigation flow and browser back behavior&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC001 testcase TC_005&quot;</td><td>&quot;SC001 pickup and drop validation&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC003 testcase TC_011&quot;</td><td>&quot;SC003 search results and no-results behavior&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Execute SC005 testcase TC_020&quot;</td><td>&quot;SC005 navigation flow and browser back behavior&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
