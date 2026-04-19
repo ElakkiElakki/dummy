@@ -1,0 +1,830 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/23/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 19 16:59:04 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>463 seconds (463195 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC006 testcase TC_021", "SC006 rental car result content and search refinement"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario006RentalCarRefinementSteps.userExecutesRentalCarRefinementFlowForSC006(Scenario006RentalCarRefinementSteps.java:35)
+	at ✽.user executes rental car refinement flow for SC006(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC006_rental_car_refinement.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1977267034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1977267034'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario006RentalCarRefinementSteps.userExecutesRentalCarRefinementFlowForSC006(Scenario006RentalCarRefinementSteps.java:35)
+	at ✽.user executes rental car refinement flow for SC006(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC006_rental_car_refinement.feature:5)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC004 testcase TC_015", "SC004 rental car selection and details"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario004RentalCarSelectionSteps.userPreparesRentalCarsSC004ScenarioWithTestCase(Scenario004RentalCarSelectionSteps.java:32)
+	at ✽.user prepares rental cars SC004 scenario with test case &quot;TC_015&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC004_rental_car_selection.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace376617395", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace376617395'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario004RentalCarSelectionSteps.userPreparesRentalCarsSC004ScenarioWithTestCase(Scenario004RentalCarSelectionSteps.java:32)
+	at ✽.user prepares rental cars SC004 scenario with test case &quot;TC_015&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC004_rental_car_selection.feature:4)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC003 testcase TC_011", "SC003 rental car result filters"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario003RentalCarFiltersSteps.userPreparesRentalCarsSC003ScenarioWithTestCase(Scenario003RentalCarFiltersSteps.java:30)
+	at ✽.user prepares rental cars SC003 scenario with test case &quot;TC_011&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC003_rental_car_filters.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1947369616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1947369616'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario003RentalCarFiltersSteps.userPreparesRentalCarsSC003ScenarioWithTestCase(Scenario003RentalCarFiltersSteps.java:30)
+	at ✽.user prepares rental cars SC003 scenario with test case &quot;TC_011&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC003_rental_car_filters.feature:4)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC003 testcase TC_009", "SC003 rental car result filters"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario003RentalCarFiltersSteps.userPreparesRentalCarsSC003ScenarioWithTestCase(Scenario003RentalCarFiltersSteps.java:30)
+	at ✽.user prepares rental cars SC003 scenario with test case &quot;TC_009&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC003_rental_car_filters.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2003768876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2003768876'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario003RentalCarFiltersSteps.userPreparesRentalCarsSC003ScenarioWithTestCase(Scenario003RentalCarFiltersSteps.java:30)
+	at ✽.user prepares rental cars SC003 scenario with test case &quot;TC_009&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC003_rental_car_filters.feature:4)
+</pre></div></td>
+<td>31</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC005 testcase TC_020", "SC005 rental car sort and comparison"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario005RentalCarSortSteps.userPreparesRentalCarsSC005ScenarioWithTestCase(Scenario005RentalCarSortSteps.java:30)
+	at ✽.user prepares rental cars SC005 scenario with test case &quot;TC_020&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC005_rental_car_sort.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace522500327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace522500327'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario005RentalCarSortSteps.userPreparesRentalCarsSC005ScenarioWithTestCase(Scenario005RentalCarSortSteps.java:30)
+	at ✽.user prepares rental cars SC005 scenario with test case &quot;TC_020&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC005_rental_car_sort.feature:4)
+</pre></div></td>
+<td>33</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC004 testcase TC_014", "SC004 rental car selection and details"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario004RentalCarSelectionSteps.userPreparesRentalCarsSC004ScenarioWithTestCase(Scenario004RentalCarSelectionSteps.java:32)
+	at ✽.user prepares rental cars SC004 scenario with test case &quot;TC_014&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC004_rental_car_selection.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace5802461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5802461'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario004RentalCarSelectionSteps.userPreparesRentalCarsSC004ScenarioWithTestCase(Scenario004RentalCarSelectionSteps.java:32)
+	at ✽.user prepares rental cars SC004 scenario with test case &quot;TC_014&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC004_rental_car_selection.feature:4)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC005 testcase TC_017", "SC005 rental car sort and comparison"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario005RentalCarSortSteps.userPreparesRentalCarsSC005ScenarioWithTestCase(Scenario005RentalCarSortSteps.java:30)
+	at ✽.user prepares rental cars SC005 scenario with test case &quot;TC_017&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC005_rental_car_sort.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1836364401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1836364401'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario005RentalCarSortSteps.userPreparesRentalCarsSC005ScenarioWithTestCase(Scenario005RentalCarSortSteps.java:30)
+	at ✽.user prepares rental cars SC005 scenario with test case &quot;TC_017&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC005_rental_car_sort.feature:4)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC004 testcase TC_016", "SC004 rental car selection and details"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario004RentalCarSelectionSteps.userPreparesRentalCarsSC004ScenarioWithTestCase(Scenario004RentalCarSelectionSteps.java:32)
+	at ✽.user prepares rental cars SC004 scenario with test case &quot;TC_016&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC004_rental_car_selection.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace498396124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace498396124'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario004RentalCarSelectionSteps.userPreparesRentalCarsSC004ScenarioWithTestCase(Scenario004RentalCarSelectionSteps.java:32)
+	at ✽.user prepares rental cars SC004 scenario with test case &quot;TC_016&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC004_rental_car_selection.feature:4)
+</pre></div></td>
+<td>33</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC005 testcase TC_019", "SC005 rental car sort and comparison"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario005RentalCarSortSteps.userPreparesRentalCarsSC005ScenarioWithTestCase(Scenario005RentalCarSortSteps.java:30)
+	at ✽.user prepares rental cars SC005 scenario with test case &quot;TC_019&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC005_rental_car_sort.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2134310847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2134310847'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario005RentalCarSortSteps.userPreparesRentalCarsSC005ScenarioWithTestCase(Scenario005RentalCarSortSteps.java:30)
+	at ✽.user prepares rental cars SC005 scenario with test case &quot;TC_019&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC005_rental_car_sort.feature:4)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC006 testcase TC_022", "SC006 rental car result content and search refinement"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario006RentalCarRefinementSteps.userExecutesRentalCarRefinementFlowForSC006(Scenario006RentalCarRefinementSteps.java:35)
+	at ✽.user executes rental car refinement flow for SC006(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC006_rental_car_refinement.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1271774788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1271774788'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario006RentalCarRefinementSteps.userExecutesRentalCarRefinementFlowForSC006(Scenario006RentalCarRefinementSteps.java:35)
+	at ✽.user executes rental car refinement flow for SC006(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC006_rental_car_refinement.feature:5)
+</pre></div></td>
+<td>33</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC003 testcase TC_010", "SC003 rental car result filters"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario003RentalCarFiltersSteps.userPreparesRentalCarsSC003ScenarioWithTestCase(Scenario003RentalCarFiltersSteps.java:30)
+	at ✽.user prepares rental cars SC003 scenario with test case &quot;TC_010&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC003_rental_car_filters.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace545472521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace545472521'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario003RentalCarFiltersSteps.userPreparesRentalCarsSC003ScenarioWithTestCase(Scenario003RentalCarFiltersSteps.java:30)
+	at ✽.user prepares rental cars SC003 scenario with test case &quot;TC_010&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC003_rental_car_filters.feature:4)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC001 testcase TC_003", "SC001 rental car search validation"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario001RentalCarSearchSteps.userExecutesRentalCarSearchFlowForSC001(Scenario001RentalCarSearchSteps.java:34)
+	at ✽.user executes rental car search flow for SC001(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC001_rental_car_search.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1472440520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1472440520'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario001RentalCarSearchSteps.userExecutesRentalCarSearchFlowForSC001(Scenario001RentalCarSearchSteps.java:34)
+	at ✽.user executes rental car search flow for SC001(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC001_rental_car_search.feature:5)
+</pre></div></td>
+<td>33</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC006 testcase TC_023", "SC006 rental car result content and search refinement"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario006RentalCarRefinementSteps.userExecutesRentalCarRefinementFlowForSC006(Scenario006RentalCarRefinementSteps.java:35)
+	at ✽.user executes rental car refinement flow for SC006(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC006_rental_car_refinement.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2132908078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2132908078'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario006RentalCarRefinementSteps.userExecutesRentalCarRefinementFlowForSC006(Scenario006RentalCarRefinementSteps.java:35)
+	at ✽.user executes rental car refinement flow for SC006(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC006_rental_car_refinement.feature:5)
+</pre></div></td>
+<td>34</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC005 testcase TC_018", "SC005 rental car sort and comparison"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario005RentalCarSortSteps.userPreparesRentalCarsSC005ScenarioWithTestCase(Scenario005RentalCarSortSteps.java:30)
+	at ✽.user prepares rental cars SC005 scenario with test case &quot;TC_018&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC005_rental_car_sort.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace239693049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace239693049'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario005RentalCarSortSteps.userPreparesRentalCarsSC005ScenarioWithTestCase(Scenario005RentalCarSortSteps.java:30)
+	at ✽.user prepares rental cars SC005 scenario with test case &quot;TC_018&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC005_rental_car_sort.feature:4)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC001 testcase TC_001", "SC001 rental car search validation"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario001RentalCarSearchSteps.userExecutesRentalCarSearchFlowForSC001(Scenario001RentalCarSearchSteps.java:34)
+	at ✽.user executes rental car search flow for SC001(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC001_rental_car_search.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1684953242", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1684953242'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario001RentalCarSearchSteps.userExecutesRentalCarSearchFlowForSC001(Scenario001RentalCarSearchSteps.java:34)
+	at ✽.user executes rental car search flow for SC001(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC001_rental_car_search.feature:5)
+</pre></div></td>
+<td>96</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC006 testcase TC_024", "SC006 rental car result content and search refinement"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario006RentalCarRefinementSteps.userExecutesRentalCarRefinementFlowForSC006(Scenario006RentalCarRefinementSteps.java:35)
+	at ✽.user executes rental car refinement flow for SC006(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC006_rental_car_refinement.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1142762505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1142762505'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario006RentalCarRefinementSteps.userExecutesRentalCarRefinementFlowForSC006(Scenario006RentalCarRefinementSteps.java:35)
+	at ✽.user executes rental car refinement flow for SC006(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC006_rental_car_refinement.feature:5)
+</pre></div></td>
+<td>34</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC002 testcase TC_006", "SC002 rental car results and navigation"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario002RentalCarResultsSteps.userExecutesRentalCarResultsFlowForSC002(Scenario002RentalCarResultsSteps.java:34)
+	at ✽.user executes rental car results flow for SC002(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC002_rental_car_results.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace640599675", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace640599675'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario002RentalCarResultsSteps.userExecutesRentalCarResultsFlowForSC002(Scenario002RentalCarResultsSteps.java:34)
+	at ✽.user executes rental car results flow for SC002(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC002_rental_car_results.feature:5)
+</pre></div></td>
+<td>33</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC002 testcase TC_007", "SC002 rental car results and navigation"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario002RentalCarResultsSteps.userExecutesRentalCarResultsFlowForSC002(Scenario002RentalCarResultsSteps.java:34)
+	at ✽.user executes rental car results flow for SC002(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC002_rental_car_results.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1749173399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1749173399'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario002RentalCarResultsSteps.userExecutesRentalCarResultsFlowForSC002(Scenario002RentalCarResultsSteps.java:34)
+	at ✽.user executes rental car results flow for SC002(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC002_rental_car_results.feature:5)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC001 testcase TC_002", "SC001 rental car search validation"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario001RentalCarSearchSteps.userExecutesRentalCarSearchFlowForSC001(Scenario001RentalCarSearchSteps.java:34)
+	at ✽.user executes rental car search flow for SC001(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC001_rental_car_search.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace165814036", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace165814036'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario001RentalCarSearchSteps.userExecutesRentalCarSearchFlowForSC001(Scenario001RentalCarSearchSteps.java:34)
+	at ✽.user executes rental car search flow for SC001(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC001_rental_car_search.feature:5)
+</pre></div></td>
+<td>115</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC002 testcase TC_008", "SC002 rental car results and navigation"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario002RentalCarResultsSteps.userExecutesRentalCarResultsFlowForSC002(Scenario002RentalCarResultsSteps.java:34)
+	at ✽.user executes rental car results flow for SC002(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC002_rental_car_results.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1970181144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1970181144'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario002RentalCarResultsSteps.userExecutesRentalCarResultsFlowForSC002(Scenario002RentalCarResultsSteps.java:34)
+	at ✽.user executes rental car results flow for SC002(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC002_rental_car_results.feature:5)
+</pre></div></td>
+<td>32</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC003 testcase TC_012", "SC003 rental car result filters"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario003RentalCarFiltersSteps.userPreparesRentalCarsSC003ScenarioWithTestCase(Scenario003RentalCarFiltersSteps.java:30)
+	at ✽.user prepares rental cars SC003 scenario with test case &quot;TC_012&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC003_rental_car_filters.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2045764375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2045764375'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65119}, goog:processID: 28416, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65119/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39d0d9165f81035c4de73dc38bb9e16b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario003RentalCarFiltersSteps.userPreparesRentalCarsSC003ScenarioWithTestCase(Scenario003RentalCarFiltersSteps.java:30)
+	at ✽.user prepares rental cars SC003 scenario with test case &quot;TC_012&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC003_rental_car_filters.feature:4)
+</pre></div></td>
+<td>33</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC004 testcase TC_013", "SC004 rental car selection and details"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario004RentalCarSelectionSteps.userPreparesRentalCarsSC004ScenarioWithTestCase(Scenario004RentalCarSelectionSteps.java:32)
+	at ✽.user prepares rental cars SC004 scenario with test case &quot;TC_013&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC004_rental_car_selection.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1099251293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1099251293'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario004RentalCarSelectionSteps.userPreparesRentalCarsSC004ScenarioWithTestCase(Scenario004RentalCarSelectionSteps.java:32)
+	at ✽.user prepares rental cars SC004 scenario with test case &quot;TC_013&quot;(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC004_rental_car_selection.feature:4)
+</pre></div></td>
+<td>33</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC002 testcase TC_005", "SC002 rental car results and navigation"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario002RentalCarResultsSteps.userExecutesRentalCarResultsFlowForSC002(Scenario002RentalCarResultsSteps.java:34)
+	at ✽.user executes rental car results flow for SC002(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC002_rental_car_results.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace301980960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace301980960'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@placeholder,&apos;Pick-up&apos;) or contains(@aria-label,&apos;Pick-up&apos;) or contains(@placeholder,&apos;pickup&apos;) or contains(@data-testid,&apos;pickup&apos;)] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\Hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65120}, goog:processID: 27336, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65120/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41af73d7e7428146a21474a70b51ff17
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.BasePage.waitForVisible(BasePage.java:30)
+	at pages.RentalCarsHomePage.enterLocationAndStabilize(RentalCarsHomePage.java:148)
+	at pages.RentalCarsHomePage.searchCars(RentalCarsHomePage.java:44)
+	at stepdefinitions.Scenario002RentalCarResultsSteps.userExecutesRentalCarResultsFlowForSC002(Scenario002RentalCarResultsSteps.java:34)
+	at ✽.user executes rental car results flow for SC002(file:///C:/Users/Hp/Documents/Codex/2026-04-19-files-mentioned-by-the-user-airport/BookingRentalCarsBDD-TestNG/src/test/resources/features/SC002_rental_car_results.feature:5)
+</pre></div></td>
+<td>30</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Execute rental cars SC001 testcase TC_004", "SC001 rental car search validation"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestRunner@683dbc2c</td></tr>
+</table><p>
+</body>
+</html>
